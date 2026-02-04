@@ -1,9 +1,9 @@
 
 export const SITE = {
-  phone: "+49 000 000 00 00",
+  phone: "+7 903 720 24 99",
   email: "hello@vizioner.art",
-  telegram: "https://t.me/USERNAME_OR_CHANNEL",
-  telegramChannel: "https://t.me/USERNAME_OR_CHANNEL"
+  telegram: "https://t.me/vizioner959",
+  telegramChannel: "https://t.me/vizioner959"
 };
 
 export function applySiteConfig(){
