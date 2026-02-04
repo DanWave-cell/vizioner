@@ -1,0 +1,81 @@
+<!doctype html><html lang="ru" data-telegram="https://t.me/USERNAME_OR_CHANNEL"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Галерея — Визионер</title>
+<meta name="description" content="Галерея работ: живопись, графика, постеры и малая скульптура."/>
+<link rel="stylesheet" href="assets/css/styles.css"/></head><body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Визионер — на главную">
+      <span class="mark" aria-hidden="true"></span>
+      <span class="name">Визионер</span>
+      <span class="tag">ART / Gallery</span>
+    </a>
+    <nav class="navlinks" aria-label="Навигация">
+      <a href="index.html">Главная</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="about.html">О проекте</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+  </div>
+</header>
+<main id="content" class="container">
+<section class="page-hero"><div class="wrap">
+  <div><div class="breadcrumb">Визионер / Галерея</div><h1>Галерея</h1></div>
+  <a class="btn primary" href="contact.html">Запросить подбор</a>
+</div></section>
+
+<section class="parallax" data-parallax style="border-radius:28px; margin-bottom:22px;">
+  <div class="layer" style="background-image:url('assets/img/bg/parallax-3.jpg');"></div>
+  <div class="veil"></div>
+  <div class="content"><div class="container">
+    <h2>Выберите настроение</h2>
+    <p>Фильтруйте по типу работ и ищите по названию/автору. Нажмите на карточку — откроется детальная информация.</p>
+  </div></div>
+</section>
+
+<section class="gallery-head">
+  <div class="toolbar" aria-label="Фильтры и поиск">
+    <button class="chip active" data-filter="all" type="button">Все</button>
+    <button class="chip" data-filter="живопись" type="button">Живопись</button>
+    <button class="chip" data-filter="графика" type="button">Графика</button>
+    <button class="chip" data-filter="постер" type="button">Постеры</button>
+    <button class="chip" data-filter="скульптура" type="button">Скульптура</button>
+    <div class="search"><input id="searchInput" type="search" placeholder="Поиск: название, автор, стиль…" aria-label="Поиск"/></div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:10px;"><div id="grid" class="gallery-grid" aria-label="Сетка работ"></div></section>
+</main>
+
+<div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="Карточка работы">
+  <div class="modal-card">
+    <div class="img"><img id="modalImg" alt=""/></div>
+    <div class="modal-side">
+      <div class="modal-top"><h3 id="modalTitle"></h3><button class="iconbtn" id="closeModal" aria-label="Закрыть">✕</button></div>
+      <p id="modalSub" class="desc"></p>
+      <p id="modalDesc" class="desc"></p>
+      <div class="kv" aria-label="Параметры">
+        <div class="k"><div class="l">Материал</div><div id="kvMaterial" class="v">—</div></div>
+        <div class="k"><div class="l">Техника</div><div id="kvTechnique" class="v">—</div></div>
+      </div>
+      <div id="modalPrice" class="price"></div>
+      <div class="actions" style="margin-top:auto;">
+        <a id="tgBtn" class="btn primary" href="https://t.me/USERNAME_OR_CHANNEL" target="_blank" rel="noopener">Написать в Telegram</a>
+        <button id="copyTitle" class="btn" type="button">Скопировать название</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container footer">
+    <div>
+      <strong>Контакт:</strong>
+      <span> +49 000 000 00 00 · hello@vizioner.art</span>
+      <div class="mini">Замените контакт и Telegram в файле <b>assets/js/site.config.js</b>.</div>
+    </div>
+    <div><a href="https://t.me/USERNAME_OR_CHANNEL" target="_blank" rel="noopener">Наш Telegram-канал</a></div>
+  </div>
+</footer>
+<script type="module" src="assets/js/gallery.js"></script>
+</body></html>
